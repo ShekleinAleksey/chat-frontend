@@ -1,0 +1,92 @@
+.main {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  padding: 10px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.me,
+.members-list,
+.messages,
+.rooms {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: gray;
+}
+
+.name {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+.messages {
+  flex-shrink: 1;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.message {
+  padding: 5px 0;
+}
+
+.message .member {
+  display: inline-block;
+}
+
+.member,
+.room {
+  padding-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.member:hover,
+.room:hover {
+  text-decoration: underline;
+}
+
+.message-form,
+.chat-title {
+  display: flex;
+  flex-shrink: 0;
+  background: #e0e0e0;
+  padding: 10px;
+}
+
+.message-form__input {
+  flex-grow: 1;
+  border: 1px solid #dfdfdf;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.message-form__button {
+  margin: 10px 0 10px 10px;
+}
+
+.auth-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

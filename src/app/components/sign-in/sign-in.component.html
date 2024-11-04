@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+
+</head>
+
+<body>
+    <div class="auth-page">
+        <div class="auth-form">
+            <h2>Авторизация</h2>
+            <form (ngSubmit)="onSubmit()">
+                <input type="text" placeholder="Логин" id="login" name="login" [(ngModel)]="login">
+                <input type="password" placeholder="Пароль" id="password"  name="password" [(ngModel)]="password">
+                <button type="submit">Войти</button>
+            </form>
+            <p>Нет аккаунта? <a routerLink="/sign-up">Регистрация</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
